@@ -11,7 +11,7 @@ This repository contains Java solutions for DSA basics, pattern printing, recurs
 
 ---
 
-## Arrays (`arryas/`)
+## Arrays (`arrays/`)
 
 | File                                   | Problem                             | Approach / Notes                                                                                          | Complexity                                                                                   |
 | -------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -76,5 +76,4 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 
 ## Notes
 
-- Folder name is currently `arryas` (typo of `arrays`), kept as-is to match your existing structure.
-- Complexity values marked as Brute/Optimal are preserved from your in-code comments where present.
+
