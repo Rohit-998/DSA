@@ -22,6 +22,7 @@ This repository contains Java solutions for DSA basics, pattern printing, recurs
 | `rotateArrayby1elementLeft.java`       | Left rotate array by 1              | Shift left and move first element to end                                                                  | Time: O(N), Space: O(1)                                                                      |
 | `rotateArraybyKthElementLeft.java`     | Left rotate array by K              | Reversal method implemented; temp-array brute method commented                                            | Brute (commented): T=O(N+d), S=O(d). Optimal: T=O(2N), S=O(1)                                |
 | `UnionOfTwoSortedArray.java`           | Union of two sorted arrays          | Brute: `HashSet` based union (commented). Optimal: Two-pointer union on sorted arrays with duplicate skip | Brute: T=O(n1logn + n2logn + o(n1+n2)) S=O(n1+n2) + O(n1+n2). Optimal: T=O(n1+n2) S=O(n1+n2) |
+| `intersectionOfTwoSortedArray.java`    | Intersection of two sorted arrays   | Brute: Nested loops with visited array (commented). Optimal: Two-pointer intersection                     | Brute: T=O(N1*N2) S=O(N2). Optimal: T=O(N1+N2) S=O(1)                                        |
 
 ---
 
