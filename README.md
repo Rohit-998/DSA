@@ -25,6 +25,7 @@ This repository contains Java solutions for DSA basics, pattern printing, recurs
 | `intersectionOfTwoSortedArray.java`    | Intersection of two sorted arrays   | Brute: Nested loops with visited array (commented). Optimal: Two-pointer intersection                     | Brute: T=O(N1*N2) S=O(N2). Optimal: T=O(N1+N2) S=O(1)                                        |
 | `maxConsecutiveOnesInArray.java`       | Max consecutive ones in array       | Single pass linear scan tracking current count and max                                                    | Optimal: T=O(N) S=O(1)                                                                       |
 | `findMissingNumberFromArray.java`      | Find missing number from array      | Brute (loops), Better (hash array), Optimal (Sum or XOR)                                                  | Brute: T=O(N*N) S=O(1), Better: T=O(N+N) S=O(N), Optimal: T=O(N) S=O(1)                      |
+| `numberAppearsOneTImeInArray.java`     | Find number appearing only once     | Brute (nested loops), Better (hash array count), Optimal (XOR all elements)                               | Brute: T=O(N*N) S=O(1), Better: T=O(N+N+N) S=O(Max+1), Optimal: T=O(N) S=O(1)                |
 
 ---
 
