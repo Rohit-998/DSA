@@ -1,6 +1,8 @@
 # Striver DSA Practice (Java)
 
-This repository contains Java solutions for DSA basics, pattern printing, recursion, and sorting.
+This repository contains **34 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+
+Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
 ## Folder Overview
 
@@ -26,6 +28,7 @@ This repository contains Java solutions for DSA basics, pattern printing, recurs
 | `maxConsecutiveOnesInArray.java`       | Max consecutive ones in array       | Single pass linear scan tracking current count and max                                                    | Optimal: T=O(N) S=O(1)                                                                       |
 | `findMissingNumberFromArray.java`      | Find missing number from array      | Brute (loops), Better (hash array), Optimal (Sum or XOR)                                                  | Brute: T=O(N*N) S=O(1), Better: T=O(N+N) S=O(N), Optimal: T=O(N) S=O(1)                      |
 | `numberAppearsOneTImeInArray.java`     | Find number appearing only once     | Brute (nested loops), Better (hash array count), Optimal (XOR all elements)                               | Brute: T=O(N*N) S=O(1), Better: T=O(N+N+N) S=O(Max+1), Optimal: T=O(N) S=O(1)                |
+| `longestSubArrayWithSumK.java`         | Longest subarray with sum K         | Brute (nested loops), Better (prefix-sum HashMap), Optimal (two-pointer sliding window, positives only)   | Brute: T=O(N²) S=O(1), Better: T=O(NlogN) S=O(N), Optimal: T=O(2N) S=O(1)                    |
 
 ---
 
@@ -80,4 +83,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 
 ## Notes
 
-
+- All solutions are written in **Java** and can be run individually via `javac FileName.java && java FileName`.
+- Brute-force and intermediate approaches are kept as **commented code** in each file for comparison.
+- Problem order follows **Striver's A2Z DSA Sheet** progression.
+- `.class` files are generated artifacts — only `.java` sources are relevant.
