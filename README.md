@@ -1,19 +1,20 @@
 # Striver DSA Practice (Java)
 
-This repository contains **34 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **35 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
 ## Folder Overview
 
-- `arrays/` - Array problems and operations
+- `arrays/easy/` - Easy array problems
+- `arrays/medium/` - Medium array problems
 - `Patterns/` - Pattern printing problems (`p1` to `p17`)
 - `recursion/` - Intro recursion problems
 - `sorting/` - Basic sorting algorithms
 
 ---
 
-## Arrays (`arrays/`)
+## Arrays — Easy (`arrays/easy/`)
 
 | File                                   | Problem                             | Approach / Notes                                                                                          | Complexity                                                                                   |
 | -------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -29,6 +30,14 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `findMissingNumberFromArray.java`      | Find missing number from array      | Brute (loops), Better (hash array), Optimal (Sum or XOR)                                                  | Brute: T=O(N*N) S=O(1), Better: T=O(N+N) S=O(N), Optimal: T=O(N) S=O(1)                      |
 | `numberAppearsOneTImeInArray.java`     | Find number appearing only once     | Brute (nested loops), Better (hash array count), Optimal (XOR all elements)                               | Brute: T=O(N*N) S=O(1), Better: T=O(N+N+N) S=O(Max+1), Optimal: T=O(N) S=O(1)                |
 | `longestSubArrayWithSumK.java`         | Longest subarray with sum K         | Brute (nested loops), Better (prefix-sum HashMap), Optimal (two-pointer sliding window, positives only)   | Brute: T=O(N²) S=O(1), Better: T=O(NlogN) S=O(N), Optimal: T=O(2N) S=O(1)                    |
+
+---
+
+## Arrays — Medium (`arrays/medium/`)
+
+| File | Problem | Approach / Notes | Complexity |
+| ---- | ------- | ---------------- | ---------- |
+| `twoSum.java` | Two Sum | Brute (nested loops), Better (single-pass HashMap), Optimal (two-pointer on sorted array, for yes/no variant) | Brute: T=O(N²) S=O(1), Better: T=O(N) S=O(N), Optimal: T=O(NlogN) S=O(1) |
 
 ---
 

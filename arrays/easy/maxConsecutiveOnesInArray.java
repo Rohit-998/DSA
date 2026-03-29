@@ -1,3 +1,4 @@
+package easy;
 public class maxConsecutiveOnesInArray {
     //Optimal T=O(N) S=O(1)
     public static int find(int[] arr) {

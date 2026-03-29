@@ -1,3 +1,4 @@
+package easy;
 
 public class rotateArraybyKthElementLeft {
     //Brute T = O(N+d) S=O(d)
