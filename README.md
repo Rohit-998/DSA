@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **35 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **36 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -38,6 +38,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | File | Problem | Approach / Notes | Complexity |
 | ---- | ------- | ---------------- | ---------- |
 | `twoSum.java` | Two Sum | Brute (nested loops), Better (single-pass HashMap), Optimal (two-pointer on sorted array, for yes/no variant) | Brute: T=O(N²) S=O(1), Better: T=O(N) S=O(N), Optimal: T=O(NlogN) S=O(1) |
+| `sortAnArrayWithZeroOneAndTwo.java` | Sort array of 0s, 1s, and 2s | Brute (merge sort), Better (counting 0s/1s/2s then overwrite). Optimal (Dutch National Flag)  | Brute: T=O(NlogN) S=O(N), Better: T=O(2N) S=O(1) |
 
 ---
 
