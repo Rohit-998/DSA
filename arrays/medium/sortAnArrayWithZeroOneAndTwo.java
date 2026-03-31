@@ -41,31 +41,56 @@ public class sortAnArrayWithZeroOneAndTwo {
     
     //Better T=O(2N) S=O(1);
 
-    public static void Sort(int[] arr){
-       int c0=0;
-       int c1=0;
-       int c2=0;
+    // public static void Sort(int[] arr){
+    //    int c0=0;
+    //    int c1=0;
+    //    int c2=0;
 
-       for (int i = 0; i < arr.length; i++) {
-           if (arr[i]==0) {
-            c0++;
-           }else if (arr[i]==1) {
-            c1++;
-           }else{
-            c2++;
-           }
-       }
-       for (int i = 0; i < c0; i++) {
-         arr[i] = 0;
-       }
-       for (int i = c0; i < c0+c1; i++) {
-         arr[i] = 1;
-       }
-       for (int i = c0+c1; i < arr.length; i++) {
-         arr[i] = 2;
-       }
+    //    for (int i = 0; i < arr.length; i++) {
+    //        if (arr[i]==0) {
+    //         c0++;
+    //        }else if (arr[i]==1) {
+    //         c1++;
+    //        }else{
+    //         c2++;
+    //        }
+    //    }
+    //    for (int i = 0; i < c0; i++) {
+    //      arr[i] = 0;
+    //    }
+    //    for (int i = c0; i < c0+c1; i++) {
+    //      arr[i] = 1;
+    //    }
+    //    for (int i = c0+c1; i < arr.length; i++) {
+    //      arr[i] = 2;
+    //    }
+    // }
+
+  // Optimal (Dutch National Flag Algorithm) T=O(N) , S=O(1)
+
+  public static void Sort(int[] arr){
+    int low = 0;
+    int n = arr.length;
+    int high = n-1;
+    int mid = 0;
+
+    for (int i = 0; i < n; i++) {
+      if (arr[mid]==0) {
+        int temp = arr[mid];
+        arr[mid] = arr[low];
+        arr[low] = temp;
+        mid++;
+        low++;
+      }else if (arr[mid]==1) {
+        mid++;
+      }else{
+        int temp = arr[mid];
+        arr[mid] = arr[high];
+        arr[high] = temp;
+        high--;
+      }
     }
-
+  }
 
 
 
