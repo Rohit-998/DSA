@@ -64,8 +64,8 @@ public class majorityElementsNby2TImes {
                 c--;
             }
         }
-
-        // only required if problem does not state "You may assume that the majority element always exists in the array"
+        
+        //verification
 
         int verifyCount = 0;
         for (int i = 0; i < n; i++) {
