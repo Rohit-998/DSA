@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **40 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **41 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -41,6 +41,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `sortAnArrayWithZeroOneAndTwo.java` | Sort array of 0s, 1s, and 2s | Brute (merge sort), Better (counting 0s/1s/2s then overwrite), Optimal (Dutch National Flag) | Brute: T=O(NlogN) S=O(N), Better: T=O(2N) S=O(1), Optimal: T=O(N) S=O(1) |
 | `majorityElementsNby2TImes.java` | Majority Element (> N/2 times) | Brute (nested loops), Better (HashMap frequency count), Optimal (Moore's Voting Algorithm + verification pass) | Brute: T=O(N²) S=O(1), Better: T=O(NlogN)+O(N) S=O(N), Optimal: T=O(N) S=O(1) |
 | `majorityElementsNby3TImes.java` | Majority Element (> N/3 times) | Brute (nested loops), Better (HashMap frequency count), Optimal (Extended Moore's Voting Algorithm with 2 candidates + verification pass) | Brute: T=O(N²) S=O(1), Better: T=O(NlogN)+O(N) S=O(N), Optimal: T=O(N) S=O(1) |
+| `threeSum.java` | Three Sum (find all unique triplets summing to 0) | Brute (triple nested loops + HashSet for dedup), Better (two loops + HashMap lookup), Optimal (sort + two-pointer with duplicate skipping) | Brute: T=O(N³) S=O(N²), Better: T=O(N²logM) S=O(N), Optimal: T=O(NlogN)+O(N²) S=O(unique triplets) |
 
 ---
 
