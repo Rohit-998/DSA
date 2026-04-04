@@ -37,32 +37,29 @@ public class threeSum {
 
     // }
 
-    // Better T=O(N^2*LogM) S=O(N)
+    // // Better T=O(N^2*LogM) S=O(N)
     // public static List<List<Integer>> find(int[] arr) {
 
-    // Set<List<Integer>> set = new HashSet<>();
+    //     Set<List<Integer>> set = new HashSet<>();
 
-    // for (int i = 0; i < arr.length; i++) {
-    // Map<Integer, Integer> map = new HashMap<>();
+    //     for (int i = 0; i < arr.length; i++) {
+    //         Map<Integer, Integer> map = new HashMap<>();
 
-    // for (int j = i + 1; j < arr.length; j++) {
-    // int rem = -(arr[i] + arr[j]);
-    // if (!map.containsKey(rem)) {
-    // map.put(arr[j], j);
+    //         for (int j = i + 1; j < arr.length; j++) {
+    //             int rem = -(arr[i] + arr[j]);
+    //             if (map.containsKey(rem)) {
+    //                 List<Integer> temp = new ArrayList<>();
+    //                 temp.add(arr[i]);
+    //                 temp.add(arr[j]);
+    //                 temp.add(rem);
+    //                 Collections.sort(temp);
+    //                 set.add(temp);
+    //             }
+    //             map.put(arr[j], j);
+    //         }
+    //     }
 
-    // } else {
-    // List<Integer> temp = new ArrayList<>();
-    // temp.add(arr[i]);
-    // temp.add(arr[j]);
-    // temp.add(rem);
-    // Collections.sort(temp);
-    // set.add(temp);
-
-    // }
-    // }
-    // }
-
-    // return new ArrayList<>(set);
+    //     return new ArrayList<>(set);
 
     // }
 
@@ -77,7 +74,7 @@ public class threeSum {
                 continue;
             }
             int j = i + 1;
-            int k = n-1;
+            int k = n - 1;
             while (j < k) {
                 int sum = arr[i] + arr[j] + arr[k];
                 if (sum > 0) {
@@ -92,10 +89,10 @@ public class threeSum {
                     ans.add(temp);
                     j++;
                     k--;
-                    while (j<k && arr[j]==arr[j-1]) {
+                    while (j < k && arr[j] == arr[j - 1]) {
                         j++;
                     }
-                    while (j<k && arr[k] == arr[k + 1]) {
+                    while (j < k && arr[k] == arr[k + 1]) {
                         k--;
                     }
                 }

@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **41 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **42 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -42,6 +42,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `majorityElementsNby2TImes.java` | Majority Element (> N/2 times) | Brute (nested loops), Better (HashMap frequency count), Optimal (Moore's Voting Algorithm + verification pass) | Brute: T=O(N²) S=O(1), Better: T=O(NlogN)+O(N) S=O(N), Optimal: T=O(N) S=O(1) |
 | `majorityElementsNby3TImes.java` | Majority Element (> N/3 times) | Brute (nested loops), Better (HashMap frequency count), Optimal (Extended Moore's Voting Algorithm with 2 candidates + verification pass) | Brute: T=O(N²) S=O(1), Better: T=O(NlogN)+O(N) S=O(N), Optimal: T=O(N) S=O(1) |
 | `threeSum.java` | Three Sum (find all unique triplets summing to 0) | Brute (triple nested loops + HashSet for dedup), Better (two loops + HashMap lookup), Optimal (sort + two-pointer with duplicate skipping) | Brute: T=O(N³) S=O(N²), Better: T=O(N²logM) S=O(N), Optimal: T=O(NlogN)+O(N²) S=O(unique triplets) |
+| `fourSum.java` | Four Sum (find all unique quadruplets summing to target) | Brute (four nested loops + HashSet dedup, long for overflow), Better (three loops + HashMap lookup), Optimal (sort + two nested loops + two-pointer with duplicate skipping) | Brute: T=O(N⁴) S=O(quads), Better: T=O(N³logM) S=O(N), Optimal: T=O(N³) S=O(quads) |
 
 ---
 
