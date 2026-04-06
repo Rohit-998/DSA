@@ -10,7 +10,6 @@ public class p17 {
                 System.out.print((char) (k + j - 1) + " ");
                 k++;
             }
-            
             System.out.println();
         }
     }
