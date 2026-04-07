@@ -1,4 +1,3 @@
-
 public class bubbleSort {
 
     public static void sort(int[] arr) {
