@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **46 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **47 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -47,6 +47,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `maximumSubarry.java` | Maximum Subarray Sum (Kadane's Algorithm) | Brute (triple nested loops), Better (double nested loops), Optimal (Kadane's Algorithm — reset sum when negative) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1), Optimal: T=O(N) S=O(1) |
 | `countSubArraysWithXorAsK.java` | Count Subarrays with XOR equal to K | Brute (triple nested loops), Better (double nested loops with running XOR) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1) |
 | `rearrangeArrayBySign.java` | Rearrange Array Elements by Sign | Brute (separate pos/neg arrays then interleave), Optimal (single-pass with two index pointers placing positives at even and negatives at odd indices) | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(N) |
+| `stocks.java` | Best Time to Buy and Sell Stock | Single pass tracking minimum price and computing max profit at each step | Time: O(N), Space: O(1) |
 
 ---
 
