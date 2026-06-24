@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **47 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **49 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -31,6 +31,8 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `numberAppearsOneTImeInArray.java`     | Find number appearing only once     | Brute (nested loops), Better (hash array count), Optimal (XOR all elements)                               | Brute: T=O(N*N) S=O(1), Better: T=O(N+N+N) S=O(Max+1), Optimal: T=O(N) S=O(1)                |
 | `longestSubArrayWithSumK.java`         | Longest subarray with sum K         | Brute (nested loops), Better (prefix-sum HashMap), Optimal (two-pointer sliding window, positives only)   | Brute: T=O(N²) S=O(1), Better: T=O(NlogN) S=O(N), Optimal: T=O(2N) S=O(1)                    |
 | `bestTImeToBuyStock.java`              | Best Time to Buy and Sell Stock     | Single pass tracking minimum price and max profit                                                         | Time: O(N), Space: O(1)                                                                       |
+| `replaceElementWithLArgest.java`       | Replace Elements with Greatest on Right | Reverse pass tracking running max, replacing each element with the greatest to its right              | Time: O(N), Space: O(N)                                                                       |
+| `leadersInAnArray.java`                | Leaders in an Array                 | Brute (nested loops, commented), Optimal (reverse pass tracking max, collect elements greater than all to their right) | Brute: T=O(N²) S=O(N), Optimal: T=O(N) S=O(N)                                                |
 
 ---
 
