@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **56 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **57 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -52,6 +52,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `longestConsecutive.java` | Longest Consecutive Sequence | Better (sort + linear scan, commented), Optimal (HashSet — only start counting from sequence starts) | Better: T=O(NlogN) S=O(1), Optimal: T=O(3N) S=O(N) |
 | `countSubArraysWithXorAsK.java` | Count Subarrays with XOR equal to K | Brute (triple nested loops, commented), Better (double nested loops with running XOR) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1) |
 | `setMatrixZeroes.java` | Set Matrix Zeroes | Brute (mark with -1 then convert, commented), Better (row/col marker arrays, commented), Optimal (use first row/col as markers + col0 variable) | Brute: T=O(N×M×(N+M)) S=O(1), Better: T=O(2×N×M) S=O(N+M), Optimal: T=O(N×M) S=O(1) |
+| `rotateImage.java` | Rotate Image (90° clockwise) | Brute (copy to new matrix with index mapping, commented), Optimal (transpose matrix in-place + reverse each row) | Brute: T=O(N×M) S=O(N×M), Optimal: T=O(N×M) S=O(1) |
 
 ---
 
