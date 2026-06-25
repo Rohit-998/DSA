@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **50 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **56 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -46,11 +46,12 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `majorityElementsNby3TImes.java` | Majority Element (> N/3 times) | Brute (nested loops), Better (HashMap frequency count), Optimal (Extended Moore's Voting Algorithm with 2 candidates + verification pass) | Brute: T=O(N²) S=O(1), Better: T=O(NlogN)+O(N) S=O(N), Optimal: T=O(N) S=O(1) |
 | `threeSum.java` | Three Sum (find all unique triplets summing to 0) | Brute (triple nested loops + HashSet for dedup), Better (two loops + HashMap lookup), Optimal (sort + two-pointer with duplicate skipping) | Brute: T=O(N³) S=O(N²), Better: T=O(N²logM) S=O(N), Optimal: T=O(NlogN)+O(N²) S=O(unique triplets) |
 | `fourSum.java` | Four Sum (find all unique quadruplets summing to target) | Brute (four nested loops + HashSet dedup, long for overflow), Better (three loops + HashMap lookup), Optimal (sort + two nested loops + two-pointer with duplicate skipping) | Brute: T=O(N⁴) S=O(quads), Better: T=O(N³logM) S=O(N), Optimal: T=O(N³) S=O(quads) |
-| `maximumSubarry.java` | Maximum Subarray Sum (Kadane's Algorithm) | Brute (triple nested loops), Better (double nested loops), Optimal (Kadane's Algorithm — reset sum when negative) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1), Optimal: T=O(N) S=O(1) |
-| `countSubArraysWithXorAsK.java` | Count Subarrays with XOR equal to K | Brute (triple nested loops), Better (double nested loops with running XOR) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1) |
-| `rearrangeArrayBySign.java` | Rearrange Array Elements by Sign | Brute (separate pos/neg arrays then interleave), Optimal (single-pass with two index pointers placing positives at even and negatives at odd indices) | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(N) |
-| `stocks.java` | Best Time to Buy and Sell Stock | Single pass tracking minimum price and computing max profit at each step | Time: O(N), Space: O(1) |
-| `longestConsecutive.java` | Longest Consecutive Sequence | Better (sort + linear scan, commented), Optimal (HashSet — find sequence starts where `num-1` absent, then count forward) | Better: T=O(NlogN) S=O(1), Optimal: T=O(3N) S=O(N) |
+| `maximumSubarry.java` | Maximum Subarray Sum (Kadane's Algorithm) | Brute (triple nested loops), Better (double nested loops with running sum), Optimal (Kadane's — single pass tracking max sum, reset on negative) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1), Optimal: T=O(N) S=O(1) |
+| `stocks.java` | Best Time to Buy and Sell Stock | Single pass tracking minimum price and computing max profit | T=O(N) S=O(1) |
+| `rearrangeArrayBySign.java` | Rearrange Array Elements by Sign | Brute (separate pos/neg arrays then merge, commented), Optimal (single pass placing positives at even indices, negatives at odd) | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(N) |
+| `longestConsecutive.java` | Longest Consecutive Sequence | Better (sort + linear scan, commented), Optimal (HashSet — only start counting from sequence starts) | Better: T=O(NlogN) S=O(1), Optimal: T=O(3N) S=O(N) |
+| `countSubArraysWithXorAsK.java` | Count Subarrays with XOR equal to K | Brute (triple nested loops, commented), Better (double nested loops with running XOR) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1) |
+| `setMatrixZeroes.java` | Set Matrix Zeroes | Brute (mark with -1 then convert, commented), Better (row/col marker arrays, commented), Optimal (use first row/col as markers + col0 variable) | Brute: T=O(N×M×(N+M)) S=O(1), Better: T=O(2×N×M) S=O(N+M), Optimal: T=O(N×M) S=O(1) |
 
 ---
 
