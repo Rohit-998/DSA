@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **59 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **60 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -8,6 +8,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 
 - `arrays/easy/` - Easy array problems
 - `arrays/medium/` - Medium array problems
+- `arrays/hard/` - Hard array problems
 - `Patterns/` - Pattern printing problems (`p1` to `p17`)
 - `recursion/` - Intro recursion problems
 - `sorting/` - Basic sorting algorithms
@@ -55,6 +56,14 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `setMatrixZeroes.java` | Set Matrix Zeroes | Brute (mark with -1 then convert, commented), Better (row/col marker arrays, commented), Optimal (use first row/col as markers + col0 variable) | Brute: T=O(N×M×(N+M)) S=O(1), Better: T=O(2×N×M) S=O(N+M), Optimal: T=O(N×M) S=O(1) |
 | `rotateImage.java` | Rotate Image (90° clockwise) | Brute (copy to new matrix with index mapping, commented), Optimal (transpose matrix in-place + reverse each row) | Brute: T=O(N×M) S=O(N×M), Optimal: T=O(N×M) S=O(1) |
 | `spiralMatrix.java` | Spiral Matrix Traversal | Optimal (layer-by-layer traversal using top/bottom/left/right boundary pointers) | T=O(N×M) S=O(N×M) |
+
+---
+
+## Arrays — Hard (`arrays/hard/`)
+
+| File | Problem | Approach / Notes | Complexity |
+| ---- | ------- | ---------------- | ---------- |
+| `pascalTriangle.java` | Pascal's Triangle (3 variants) | **V1 — Element at (N, R):** nCr using iterative multiplication to avoid overflow. **V2 — Nth Row:** generate full row using running nCr formula. **V3 — Full Triangle:** build all rows by calling V2 for each row. | V1: T=O(R) S=O(1), V2: T=O(N) S=O(N), V3: T=O(N²) S=O(N²) |
 
 ---
 
