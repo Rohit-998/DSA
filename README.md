@@ -44,15 +44,13 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `twoSum.java` | Two Sum | Brute (nested loops), Better (single-pass HashMap), Optimal (two-pointer on sorted array, for yes/no variant) | Brute: T=O(N²) S=O(1), Better: T=O(N) S=O(N), Optimal: T=O(NlogN) S=O(1) |
 | `sortAnArrayWithZeroOneAndTwo.java` | Sort array of 0s, 1s, and 2s | Brute (merge sort), Better (counting 0s/1s/2s then overwrite), Optimal (Dutch National Flag) | Brute: T=O(NlogN) S=O(N), Better: T=O(2N) S=O(1), Optimal: T=O(N) S=O(1) |
 | `majorityElementsNby2TImes.java` | Majority Element (> N/2 times) | Brute (nested loops), Better (HashMap frequency count), Optimal (Moore's Voting Algorithm + verification pass) | Brute: T=O(N²) S=O(1), Better: T=O(NlogN)+O(N) S=O(N), Optimal: T=O(N) S=O(1) |
-| `majorityElementsNby3TImes.java` | Majority Element (> N/3 times) | Brute (nested loops), Better (HashMap frequency count), Optimal (Extended Moore's Voting Algorithm with 2 candidates + verification pass) | Brute: T=O(N²) S=O(1), Better: T=O(NlogN)+O(N) S=O(N), Optimal: T=O(N) S=O(1) |
-| `threeSum.java` | Three Sum (find all unique triplets summing to 0) | Brute (triple nested loops + HashSet for dedup), Better (two loops + HashMap lookup), Optimal (sort + two-pointer with duplicate skipping) | Brute: T=O(N³) S=O(N²), Better: T=O(N²logM) S=O(N), Optimal: T=O(NlogN)+O(N²) S=O(unique triplets) |
-| `fourSum.java` | Four Sum (find all unique quadruplets summing to target) | Brute (four nested loops + HashSet dedup, long for overflow), Better (three loops + HashMap lookup), Optimal (sort + two nested loops + two-pointer with duplicate skipping) | Brute: T=O(N⁴) S=O(quads), Better: T=O(N³logM) S=O(N), Optimal: T=O(N³) S=O(quads) |
+
 | `maximumSubarry.java` | Maximum Subarray Sum (Kadane's Algorithm) | Brute (triple nested loops), Better (double nested loops with running sum), Optimal (Kadane's — single pass tracking max sum, reset on negative) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1), Optimal: T=O(N) S=O(1) |
 | `stocks.java` | Best Time to Buy and Sell Stock | Single pass tracking minimum price and computing max profit | T=O(N) S=O(1) |
 | `rearrangeArrayBySign.java` | Rearrange Array Elements by Sign | Brute (separate pos/neg arrays then merge, commented), Optimal (single pass placing positives at even indices, negatives at odd) | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(N) |
 | `longestConsecutive.java` | Longest Consecutive Sequence | Better (sort + linear scan, commented), Optimal (HashSet — only start counting from sequence starts) | Better: T=O(NlogN) S=O(1), Optimal: T=O(3N) S=O(N) |
 | `countSubArraysSumEqualsK.java` | Count Subarrays with Sum equal to K | Brute (triple nested loops, commented), Better (double nested loops with running sum, commented), Optimal (prefix-sum HashMap — track prefix sums and lookup `prefixSum - K`) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1), Optimal: T=O(NlogN) S=O(N) |
-| `countSubArraysWithXorAsK.java` | Count Subarrays with XOR equal to K | Brute (triple nested loops, commented), Better (double nested loops with running XOR) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1) |
+
 | `setMatrixZeroes.java` | Set Matrix Zeroes | Brute (mark with -1 then convert, commented), Better (row/col marker arrays, commented), Optimal (use first row/col as markers + col0 variable) | Brute: T=O(N×M×(N+M)) S=O(1), Better: T=O(2×N×M) S=O(N+M), Optimal: T=O(N×M) S=O(1) |
 | `rotateImage.java` | Rotate Image (90° clockwise) | Brute (copy to new matrix with index mapping, commented), Optimal (transpose matrix in-place + reverse each row) | Brute: T=O(N×M) S=O(N×M), Optimal: T=O(N×M) S=O(1) |
 | `spiralMatrix.java` | Spiral Matrix Traversal | Optimal (layer-by-layer traversal using top/bottom/left/right boundary pointers) | T=O(N×M) S=O(N×M) |
@@ -64,6 +62,10 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | File | Problem | Approach / Notes | Complexity |
 | ---- | ------- | ---------------- | ---------- |
 | `pascalTriangle.java` | Pascal's Triangle (3 variants) | **V1 — Element at (N, R):** nCr using iterative multiplication to avoid overflow. **V2 — Nth Row:** generate full row using running nCr formula. **V3 — Full Triangle:** build all rows by calling V2 for each row. | V1: T=O(R) S=O(1), V2: T=O(N) S=O(N), V3: T=O(N²) S=O(N²) |
+| `majorityElementsNby3TImes.java` | Majority Element (> N/3 times) | Brute (nested loops), Better (HashMap frequency count), Optimal (Extended Moore's Voting Algorithm with 2 candidates + verification pass) | Brute: T=O(N²) S=O(1), Better: T=O(NlogN)+O(N) S=O(N), Optimal: T=O(N) S=O(1) |
+| `threeSum.java` | Three Sum (find all unique triplets summing to 0) | Brute (triple nested loops + HashSet for dedup), Better (two loops + HashMap lookup), Optimal (sort + two-pointer with duplicate skipping) | Brute: T=O(N³) S=O(N²), Better: T=O(N²logM) S=O(N), Optimal: T=O(NlogN)+O(N²) S=O(unique triplets) |
+| `fourSum.java` | Four Sum (find all unique quadruplets summing to target) | Brute (four nested loops + HashSet dedup, long for overflow), Better (three loops + HashMap lookup), Optimal (sort + two nested loops + two-pointer with duplicate skipping) | Brute: T=O(N⁴) S=O(quads), Better: T=O(N³logM) S=O(N), Optimal: T=O(N³) S=O(quads) |
+| `countSubArraysWithXorAsK.java` | Count Subarrays with XOR equal to K | Brute (triple nested loops, commented), Better (double nested loops with running XOR) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1) |
 
 ---
 

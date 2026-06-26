@@ -1,4 +1,4 @@
-package medium;
+package hard;
 
 public class countSubArraysWithXorAsK {
 
