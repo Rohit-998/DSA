@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **61 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **62 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -67,6 +67,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `fourSum.java` | Four Sum (find all unique quadruplets summing to target) | Brute (four nested loops + HashSet dedup, long for overflow), Better (three loops + HashMap lookup), Optimal (sort + two nested loops + two-pointer with duplicate skipping) | Brute: T=O(N⁴) S=O(quads), Better: T=O(N³logM) S=O(N), Optimal: T=O(N³) S=O(quads) |
 | `countSubArraysWithXorAsK.java` | Count Subarrays with XOR equal to K | Brute (triple nested loops, commented), Better (double nested loops with running XOR) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(1) |
 | `MergreOverLApping.java` | Merge Overlapping Intervals | Brute (sort + nested loop to extend each interval, commented), Optimal (sort + single pass merging into running interval) | Brute: T=O(NlogN)+O(2N) S=O(N), Optimal: T=O(NlogN)+O(N) S=O(N) |
+| `Merge2SortedArrayWithoutExtraSpace.java` | Merge Two Sorted Arrays Without Extra Space | Optimal (two-pointer swap from ends to partition elements, then sort both halves and copy) | T=O(min(m,n) + m·log m + n·log n) S=O(1) |
 
 ---
 
