@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **64 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **65 Java solutions** covering arrays, pattern printing, recursion, and sorting — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -70,6 +70,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 | `Merge2SortedArrayWithoutExtraSpace.java` | Merge Two Sorted Arrays Without Extra Space | Optimal (two-pointer swap from ends to partition elements, then sort both halves and copy) | T=O(min(m,n) + m·log m + n·log n) S=O(1) |
 | `missingAndRepeatingNo.java` | Missing and Repeating Number | Brute (iterate 1–N², count occurrences in grid), Better (hash array frequency count), Optimal (math — sum & sum-of-squares difference to solve for missing & repeating) | Brute: T=O(N³) S=O(1), Better: T=O(N²) S=O(N), Optimal: T=O(N²) S=O(1) |
 | `countInversion.java` | Count Inversions | Brute (nested loops counting pairs where arr[i] > arr[j] for i < j) | Brute: T=O(N²) S=O(1) |
+| `maxProductSubArr.java` | Maximum Product Subarray | Brute (nested loops trying all subarrays, commented), Optimal (prefix-suffix product scan — reset on zero, track max of prefix & suffix products) | Brute: T=O(N²) S=O(1), Optimal: T=O(N) S=O(1) |
 
 ---
 
