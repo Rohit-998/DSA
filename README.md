@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **67 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **68 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -130,6 +130,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | ---- | ------- | ---------------- | ---------- |
 | `BS1.java` | Binary Search (Iterative + Recursive) | Iterative (loop with low/high pointers), Recursive (divide search space via recursion) | Iterative: T=O(logN) S=O(1), Recursive: T=O(logN) S=O(logN) |
 | `BS2.java` | Lower Bound & Upper Bound | Lower Bound (find smallest index where `arr[mid] >= target`), Upper Bound (find smallest index where `arr[mid] > target`) | T=O(logN) S=O(1) |
+| `firstAndLastOcc.java` | First and Last Occurrence of Element | Brute (linear scan tracking first/last, commented), Optimal (two binary searches — lower bound for first, upper bound−1 for last) | Brute: T=O(N) S=O(1), Optimal: T=O(logN) S=O(1) |
 
 ---
 
