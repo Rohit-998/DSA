@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **70 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **67 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -133,6 +133,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `firstAndLastOcc.java` | First and Last Occurrence of Element | Brute (linear scan tracking first/last, commented), Optimal (two binary searches — lower bound for first, upper bound−1 for last) | Brute: T=O(N) S=O(1), Optimal: T=O(logN) S=O(1) |
 | `RotatedMinElement.java` | Minimum in Rotated Sorted Array | Optimal (binary search — identify sorted half, track min from sorted side, eliminate half each step) | T=O(logN) S=O(1) |
 | `howManyTimeArrayRotated.java` | Find out how many times array has been rotated | Optimal (binary search — identify sorted half, handle duplicates by shrinking space, track min index) | T=O(logN) avg, O(N) worst, S=O(1) |
+| `FindPeakElement.java` | Find Peak Element | Brute (linear scan checking neighbors, commented), Optimal (binary search — check if mid is peak, move toward ascending side) | Brute: T=O(N) S=O(1), Optimal: T=O(logN) S=O(1) |
 
 ---
 
