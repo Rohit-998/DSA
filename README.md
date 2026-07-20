@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **69 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **70 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -136,6 +136,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `FindPeakElement.java` | Find Peak Element | Brute (linear scan checking neighbors, commented), Optimal (binary search — check if mid is peak, move toward ascending side) | Brute: T=O(N) S=O(1), Optimal: T=O(logN) S=O(1) |
 | `kokoEatingBananas.java` | Koko Eating Bananas (Min Eating Speed) | Brute (linear search from 1 to max(piles), commented), Optimal (binary search on answer space [1, max] — check if eating speed can finish within h hours) | Brute: T=O(max×N) S=O(1), Optimal: T=O(N×log(max)) S=O(1) |
 | `findTheSmallestDivisorThreshold.java` | Find the Smallest Divisor Given a Threshold | Brute (linear search from 1 to max(nums), commented), Optimal (binary search on answer space [1, max] — check if divisor keeps ceiling-sum ≤ threshold) | Brute: T=O(max×N) S=O(1), Optimal: T=O(N×log(max)) S=O(1) |
+| `leastCapacityToShip.java` | Capacity to Ship Packages Within D Days | Brute (linear search from max(weights) to sum(weights), commented), Optimal (binary search on answer space [max, sum] — check if capacity can ship within D days) | Brute: T=O((sum−max)×N) S=O(1), Optimal: T=O(N×log(sum−max)) S=O(1) |
 
 ---
 
