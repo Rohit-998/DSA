@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **67 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **68 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -134,6 +134,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `RotatedMinElement.java` | Minimum in Rotated Sorted Array | Optimal (binary search — identify sorted half, track min from sorted side, eliminate half each step) | T=O(logN) S=O(1) |
 | `howManyTimeArrayRotated.java` | Find out how many times array has been rotated | Optimal (binary search — identify sorted half, handle duplicates by shrinking space, track min index) | T=O(logN) avg, O(N) worst, S=O(1) |
 | `FindPeakElement.java` | Find Peak Element | Brute (linear scan checking neighbors, commented), Optimal (binary search — check if mid is peak, move toward ascending side) | Brute: T=O(N) S=O(1), Optimal: T=O(logN) S=O(1) |
+| `kokoEatingBananas.java` | Koko Eating Bananas (Min Eating Speed) | Brute (linear search from 1 to max(piles), commented), Optimal (binary search on answer space [1, max] — check if eating speed can finish within h hours) | Brute: T=O(max×N) S=O(1), Optimal: T=O(N×log(max)) S=O(1) |
 
 ---
 
