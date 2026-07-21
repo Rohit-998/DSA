@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **71 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **72 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -138,6 +138,8 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `findTheSmallestDivisorThreshold.java` | Find the Smallest Divisor Given a Threshold | Brute (linear search from 1 to max(nums), commented), Optimal (binary search on answer space [1, max] — check if divisor keeps ceiling-sum ≤ threshold) | Brute: T=O(max×N) S=O(1), Optimal: T=O(N×log(max)) S=O(1) |
 | `leastCapacityToShip.java` | Capacity to Ship Packages Within D Days | Brute (linear search from max(weights) to sum(weights), commented), Optimal (binary search on answer space [max, sum] — check if capacity can ship within D days) | Brute: T=O((sum−max)×N) S=O(1), Optimal: T=O(N×log(sum−max)) S=O(1) |
 | `kthMissingNumber.java` | Kth Missing Positive Number | Brute (linear scan counting missing up to k, commented), Optimal (binary search on missing count `arr[mid] - (mid + 1)` to find location of k-th missing) | Brute: T=O(N) S=O(1), Optimal: T=O(logN) S=O(1) |
+| `AgressiveCows.java` | Aggressive Cows | Brute (linear search from 1 to max-min, commented), Optimal (binary search on answer space [1, max] — check if we can place cows with given minimum distance) | Brute: T=O(NlogN + (max−min)×N) S=O(1), Optimal: T=O(NlogN + N×log(max−min)) S=O(1) |
+
 
 
 ---
