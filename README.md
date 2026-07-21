@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **72 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **73 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -13,6 +13,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 - `recursion/` - Intro recursion problems
 - `sorting/` - Basic sorting algorithms
 - `Binary Search/` - Binary search problems
+- `Trees/` - Tree data structure problems
 
 ---
 
@@ -141,6 +142,13 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `AgressiveCows.java` | Aggressive Cows | Brute (linear search from 1 to max-min, commented), Optimal (binary search on answer space [1, max] — check if we can place cows with given minimum distance) | Brute: T=O(NlogN + (max−min)×N) S=O(1), Optimal: T=O(NlogN + N×log(max−min)) S=O(1) |
 
 
+---
+
+## Trees (`Trees/`)
+
+| File | Problem | Approach / Notes | Complexity |
+| ---- | ------- | ---------------- | ---------- |
+| `preOrderTraversal.java` | Pre-order Traversal of Binary Tree | Recursive (Root → Left → Right) | T=O(N) S=O(N) |
 
 ---
 
