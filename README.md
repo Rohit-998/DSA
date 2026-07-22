@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **75 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **76 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, and stacks — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -14,6 +14,7 @@ Each problem includes **brute → better → optimal** approaches where applicab
 - `sorting/` - Basic sorting algorithms
 - `Binary Search/` - Binary search problems
 - `Trees/` - Tree data structure problems
+- `Stack/` - Stack data structure implementations and problems
 
 ---
 
@@ -151,6 +152,14 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `preOrderTraversal.java` | Pre-order Traversal of Binary Tree | Recursive (Root → Left → Right) | T=O(N) S=O(N) |
 | `inOrderTraversal.java` | In-order Traversal of Binary Tree | Recursive (Left → Root → Right) | T=O(N) S=O(N) |
 | `postOrderTraversal.java` | Post-order Traversal of Binary Tree | Recursive (Left → Right → Root) | T=O(N) S=O(N) |
+
+---
+
+## Stack (`Stack/`)
+
+| File | Problem | Approach / Notes | Complexity |
+| ---- | ------- | ---------------- | ---------- |
+| `implementtation.java` | Stack Implementation using Array | Array-based implementation with push, pop, and print | Push/Pop: T=O(1) S=O(1), Print: T=O(N) S=O(1) |
 
 
 
