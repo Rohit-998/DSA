@@ -155,7 +155,7 @@ public class implemention {
     // T=O(N)
     private static Node insertAtStart(Node head, int data) {
         if (head == null) {
-            return convertArr2LL(new int[] { data });
+            return new Node(data);
         }
         Node temp = new Node(data);
         temp.next = head;
@@ -163,18 +163,38 @@ public class implemention {
         return head;
     }
 
+
+    // T=O(N)
+    public static Node insertAtEnd(Node head, int data){
+        if (head == null) {
+            return new Node(data);
+        }
+        Node temp = head;
+        while (temp.next!=null) {
+            temp =temp.next;
+        }
+        temp.next=new Node(data);
+        return head;
+    }
+
     public static void main(String[] args) {
         int[] arr = { 2, 3, 4, 5, 6 };
         Node head = convertArr2LL(arr);
         // print(head);
+
         // System.out.println(lengthOfLL(head));
         // System.out.println(checkIfPresent(head, 2));
 
         // head = deleteKthElement(head, 4);
         // print(head);
+
         // head = deleteEle(head, 3);
         // print(head);
-        head = insertAtStart(head, 1);
+
+        // head = insertAtStart(head, 1);
+        // print(head);
+
+        head = insertAtEnd(head, 7);
         print(head);
 
     }
