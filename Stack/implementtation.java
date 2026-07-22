@@ -11,14 +11,17 @@ class stack {
     }
 
  
-
+    // T=O(1)
     public void push(int data) {
         arr[++top] = data;
     }
 
+    // T=O(1)
     public void pop() {
         top--;
     }
+
+    // T=O(top)
     public void print(){
         if (top==-1) {
             System.out.println("Stack Is Empty");
