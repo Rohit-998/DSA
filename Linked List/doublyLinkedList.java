@@ -49,10 +49,31 @@ public class doublyLinkedList {
         }
 
     }
+    
+    // T=O(1)
+    private static DNode deleteHead(DNode head) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
+            return null;
+        }
+
+        DNode temp = head;
+        head = head.next;
+        head.prev = null;
+        temp.next=null;
+        return head;
+        
+
+    }
 
     public static void main(String[] args) {
         int[] arr = { 2, 3, 4, 5, 6, 8 };
         DNode head = convertArr2LL(arr);
+        // print(head);
+
+        head = deleteHead(head);
         print(head);
     }
 
