@@ -59,6 +59,23 @@ public class implemention {
         return ans;
     }
 
+    // T=O(N)
+    private static void print(Node head) {
+        if (head == null) {
+            System.out.println("LL Is Empty");
+            return;
+        }
+        Node temp = head;
+        while (temp != null) {
+
+            System.out.println(temp.data);
+            temp = temp.next;
+
+        }
+
+    }
+    
+    // T=O(1)
     private static Node deleteHead(Node head) {
         if (head == null) {
             return head;
@@ -67,7 +84,8 @@ public class implemention {
         head = head.next;
         return head;
     }
-
+     
+    // T=O(N)
     private static Node deleteTail(Node head) {
         if (head == null || head.next == null) {
             return null;
@@ -134,37 +152,30 @@ public class implemention {
         return head;
     }
 
+    // T=O(N)
+    private static Node insertAtStart(Node head, int data) {
+        if (head == null) {
+            return convertArr2LL(new int[] { data });
+        }
+        Node temp = new Node(data);
+        temp.next = head;
+        head = temp;
+        return head;
+    }
+
     public static void main(String[] args) {
         int[] arr = { 2, 3, 4, 5, 6 };
         Node head = convertArr2LL(arr);
-        Node temp = head;
-        // while (temp!=null) {
-
-        // System.out.println(temp.data);
-        // temp=temp.next;
-
-        // }
+        // print(head);
         // System.out.println(lengthOfLL(head));
         // System.out.println(checkIfPresent(head, 2));
 
-        // head = deleteKthElement(head, 7);
-        // temp = head;
-        // while (temp != null) {
-
-        //     System.out.println(temp.data);
-        //     temp = temp.next;
-
-        // }
-        head = deleteEle(head, 7);
-        temp = head;
-        while (temp != null) {
-
-            System.out.println(temp.data);
-            temp = temp.next;
-
-        }
-
-        
+        // head = deleteKthElement(head, 4);
+        // print(head);
+        // head = deleteEle(head, 3);
+        // print(head);
+        head = insertAtStart(head, 1);
+        print(head);
 
     }
 
