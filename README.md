@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **74 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **75 Java solutions** covering arrays, pattern printing, recursion, sorting, and binary search — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -150,6 +150,8 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | ---- | ------- | ---------------- | ---------- |
 | `preOrderTraversal.java` | Pre-order Traversal of Binary Tree | Recursive (Root → Left → Right) | T=O(N) S=O(N) |
 | `inOrderTraversal.java` | In-order Traversal of Binary Tree | Recursive (Left → Root → Right) | T=O(N) S=O(N) |
+| `postOrderTraversal.java` | Post-order Traversal of Binary Tree | Recursive (Left → Right → Root) | T=O(N) S=O(N) |
+
 
 
 ---
