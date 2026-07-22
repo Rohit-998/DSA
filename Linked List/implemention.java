@@ -1,4 +1,4 @@
-import easy.numberAppearsOneTImeInArray;
+
 
 class Node {
     int data;
@@ -17,7 +17,7 @@ class Node {
 
 public class implemention {
 
-    // T=O(1)
+    // T=O(N)
     private static Node convertArr2LL(int[] arr) {
         Node head = new Node(arr[0]);
         Node mover = head;
@@ -30,7 +30,7 @@ public class implemention {
 
     }
 
-    // T=O(1)
+    // T=O(N)
     private static int lengthOfLL(Node head) {
         int L = 0;
         Node temp = head;
@@ -43,7 +43,7 @@ public class implemention {
         return L;
     }
 
-    // T=O(1)
+    // T=O(N)
     private static int checkIfPresent(Node head, int val) {
         int ans = 0;
         Node temp = head;
@@ -74,7 +74,7 @@ public class implemention {
         }
 
     }
-    
+
     // T=O(1)
     private static Node deleteHead(Node head) {
         if (head == null) {
@@ -84,7 +84,7 @@ public class implemention {
         head = head.next;
         return head;
     }
-     
+
     // T=O(N)
     private static Node deleteTail(Node head) {
         if (head == null || head.next == null) {
@@ -152,7 +152,7 @@ public class implemention {
         return head;
     }
 
-    // T=O(N)
+    // T=O(1)
     private static Node insertAtStart(Node head, int data) {
         if (head == null) {
             return new Node(data);
@@ -163,22 +163,55 @@ public class implemention {
         return head;
     }
 
-
     // T=O(N)
-    public static Node insertAtEnd(Node head, int data){
+    public static Node insertAtEnd(Node head, int data) {
         if (head == null) {
             return new Node(data);
         }
         Node temp = head;
-        while (temp.next!=null) {
-            temp =temp.next;
+        while (temp.next != null) {
+            temp = temp.next;
         }
-        temp.next=new Node(data);
+        temp.next = new Node(data);
+        return head;
+    }
+
+
+    // T=O(N)
+    public static Node insertAtKthPoi(Node head, int data, int k) {
+        if (head == null) {
+            if (k == 1) {
+                return new Node(data);
+            }else{
+                return null;
+            }
+        }
+
+        if (k==1) {
+            Node temp = new Node(data,head);
+            return temp;
+        }
+
+        Node temp = head;
+        int cnt = 0;
+        while (temp != null) {
+            cnt++;
+            if (cnt == k-1) {
+                Node newNode = new Node(data);
+                newNode.next =  temp.next;
+                temp.next = newNode;
+                break;
+               
+            }
+           
+            temp = temp.next;
+
+        }
         return head;
     }
 
     public static void main(String[] args) {
-        int[] arr = { 2, 3, 4, 5, 6 };
+        int[] arr = { 2, 3, 4, 5, 6, 8 };
         Node head = convertArr2LL(arr);
         // print(head);
 
@@ -194,7 +227,10 @@ public class implemention {
         // head = insertAtStart(head, 1);
         // print(head);
 
-        head = insertAtEnd(head, 7);
+        // head = insertAtEnd(head, 7);
+        // print(head);
+
+        head = insertAtKthPoi(head, 7, 7);
         print(head);
 
     }
