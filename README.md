@@ -178,7 +178,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 
 | File | Problem | Approach / Notes | Complexity |
 | ---- | ------- | ---------------- | ---------- |
-| `implemention.java` | Linked List Implementation (Singly) | Convert array to linked list, compute length, search for element, delete head, delete tail, delete k-th element | Convert: T=O(N) S=O(N), Length/Search: T=O(N) S=O(1), DeleteHead: T=O(1), DeleteTail/DeleteKth: T=O(N) S=O(1) |
+| `implemention.java` | Linked List Implementation (Singly) | Convert array to linked list, compute length, search for element, delete head, delete tail, delete k-th element, delete by value | Convert: T=O(N) S=O(N), Length/Search: T=O(N) S=O(1), DeleteHead: T=O(1), DeleteTail/DeleteKth/DeleteByValue: T=O(N) S=O(1) |
 
 ---
 

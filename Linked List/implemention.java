@@ -108,6 +108,32 @@ public class implemention {
         return head;
     }
 
+    // T=O(N)
+    private static Node deleteEle(Node head, int el) {
+        if (head == null) {
+            return null;
+        }
+        if (head.data == el) {
+            return deleteHead(head);
+        }
+
+        Node temp = head;
+        Node prev = null;
+        while (temp != null) {
+
+            if (temp.data == el) {
+                prev.next = prev.next.next;
+                break;
+
+            }
+            prev = temp;
+            temp = temp.next;
+
+        }
+
+        return head;
+    }
+
     public static void main(String[] args) {
         int[] arr = { 2, 3, 4, 5, 6 };
         Node head = convertArr2LL(arr);
@@ -121,7 +147,15 @@ public class implemention {
         // System.out.println(lengthOfLL(head));
         // System.out.println(checkIfPresent(head, 2));
 
-        head = deleteKthElement(head, 7);
+        // head = deleteKthElement(head, 7);
+        // temp = head;
+        // while (temp != null) {
+
+        //     System.out.println(temp.data);
+        //     temp = temp.next;
+
+        // }
+        head = deleteEle(head, 7);
         temp = head;
         while (temp != null) {
 
@@ -129,6 +163,8 @@ public class implemention {
             temp = temp.next;
 
         }
+
+        
 
     }
 
