@@ -14,7 +14,7 @@ class Node {
     }
 }
 
-public class implemention {
+public class singlyLinkedList {
 
     // T=O(N)
     private static Node convertArr2LL(int[] arr) {
