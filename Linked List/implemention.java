@@ -1,5 +1,4 @@
 
-
 class Node {
     int data;
     Node next;
@@ -176,19 +175,18 @@ public class implemention {
         return head;
     }
 
-
     // T=O(N)
     public static Node insertAtKthPoi(Node head, int data, int k) {
         if (head == null) {
             if (k == 1) {
                 return new Node(data);
-            }else{
+            } else {
                 return null;
             }
         }
 
-        if (k==1) {
-            Node temp = new Node(data,head);
+        if (k == 1) {
+            Node temp = new Node(data, head);
             return temp;
         }
 
@@ -196,14 +194,44 @@ public class implemention {
         int cnt = 0;
         while (temp != null) {
             cnt++;
-            if (cnt == k-1) {
+            if (cnt == k - 1) {
                 Node newNode = new Node(data);
-                newNode.next =  temp.next;
+                newNode.next = temp.next;
                 temp.next = newNode;
                 break;
-               
+
             }
-           
+
+            temp = temp.next;
+
+        }
+        return head;
+    }
+
+
+    // T=O(N)
+    private static Node insertBeforeTheVal(Node head, int data, int el) {
+        if (head == null) {
+            return new Node(data);
+        }
+
+        if (head.data == el) {
+            return new Node(data, head);
+
+        }
+
+        Node temp = head;
+
+        while (temp.next != null) {
+
+            if (temp.next.data == el) {
+                Node newNode = new Node(data);
+                newNode.next = temp.next;
+                temp.next = newNode;
+                break;
+
+            }
+
             temp = temp.next;
 
         }
@@ -230,8 +258,12 @@ public class implemention {
         // head = insertAtEnd(head, 7);
         // print(head);
 
-        head = insertAtKthPoi(head, 7, 7);
+        // head = insertAtKthPoi(head, 7, 7);
+        // print(head);
+
+        head = insertBeforeTheVal(head, 7, 8);
         print(head);
+
 
     }
 
