@@ -114,6 +114,31 @@ public class doublyLinkedList {
         return head;
     }
 
+    // T=O(N)
+    private static DNode deleteBeforeEle(DNode head , int el){
+        if (head==null) {
+            return null;
+        }
+        if (head.next==null) {
+            return head;
+        }
+        if (head.next.data == el) {
+            return deleteHead(head);
+        }
+
+        DNode temp = head;
+        while (temp!=null) {
+           if (temp.data == el) {
+              DNode prev = temp.prev.prev;
+              temp.prev = prev;
+              prev.next = temp;
+              break;
+           } 
+           temp= temp.next;
+        }
+        return head;
+    }
+
     
 
     public static void main(String[] args) {
