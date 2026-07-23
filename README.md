@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **81 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **82 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -180,6 +180,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `doublyLinkedList.java` | Linked List Implementation (Doubly) | Convert array to doubly linked list, print, delete head/tail/k-th/before element, insert at start/end/k-th position/after value | Convert/Print/DeleteTail/DeleteKth/DeleteBeforeEle/InsertAtEnd/InsertAtKth/InsertAfterVal: T=O(N), DeleteHead/InsertAtStart: T=O(1), All: S=O(1) |
 | `reverseADLL.java` | Reverse a Doubly Linked List | Brute: use stack to swap data; Optimal: swap prev/next pointers in-place | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(1) |
 | `addTwoNumbers.java` | Add Two Numbers (Linked Lists) | Use dummy node, traverse both lists simultaneously with carry | T=O(max(N1,N2)) S=O(max(N1,N2)) |
+| `oddEvenLL.java` | Odd Even Linked List | Brute: create new nodes by index parity; Optimal: rearrange pointers with odd/even chains | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(1) |
 
 ---
 
