@@ -139,6 +139,17 @@ public class doublyLinkedList {
         return head;
     }
 
+
+    // T=O(1)
+    private static DNode insertAtStart(DNode head , int data){
+        if (head==null) {
+            return new DNode(data);
+        }
+        DNode newDnode =  new DNode(data, head,null );
+        head.prev= newDnode;
+        return newDnode;
+    }
+
     
 
     public static void main(String[] args) {
@@ -152,7 +163,10 @@ public class doublyLinkedList {
         // head = deleteTail(head);
         // print(head);
 
-        head = deleteKthElement(head, 3);
+        // head = deleteKthElement(head, 3);
+        // print(head);
+
+        head = deleteBeforeEle(head, 4);
         print(head);
 
     }
