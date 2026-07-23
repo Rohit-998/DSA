@@ -87,6 +87,35 @@ public class doublyLinkedList {
 
     }
 
+    // T=O(N)
+    private static DNode deleteKthElement(DNode head ,int k){
+
+        if (head==null) {
+         return null;
+        }
+        if (k==1) {
+            return deleteHead(head);
+        }
+        int cnt = 0;
+        DNode temp = head;
+
+        while (temp!=null) {
+            cnt++;
+            if (cnt==k-1) {
+                DNode ahead = temp.next.next;
+                temp.next = ahead;
+                if(ahead !=null){
+                ahead.prev = temp;
+                }
+                break;
+            }
+            temp = temp.next;
+        }
+        return head;
+    }
+
+    
+
     public static void main(String[] args) {
         int[] arr = { 2, 3, 4, 5, 6, 8 };
         DNode head = convertArr2LL(arr);
@@ -95,8 +124,12 @@ public class doublyLinkedList {
         // head = deleteHead(head);
         // print(head);
 
-        head = deleteTail(head);
+        // head = deleteTail(head);
+        // print(head);
+
+        head = deleteKthElement(head, 3);
         print(head);
+
     }
 
 }
