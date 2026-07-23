@@ -156,13 +156,50 @@ public class doublyLinkedList {
         DNode newDNode = new DNode(data);
         DNode temp = head;
         while (temp.next != null) {
-          
+
             temp = temp.next;
         }
         temp.next = newDNode;
         newDNode.prev = temp;
-      
+
         return head;
+    }
+
+    private static DNode insertAtKthPoi(DNode head, int data, int k) {
+        if (head == null) {
+            if (k == 1) {
+                return new DNode(data);
+            } else {
+                return null;
+            }
+        }
+
+        if (k == 1) {
+            DNode newDNode = new DNode(data, head, null);
+            head.prev = newDNode;
+            return newDNode;
+        }
+
+        int cnt = 0;
+        DNode temp = head;
+        while (temp != null) {
+            cnt++;
+            if (cnt == k - 1) {
+                DNode newDNode = new DNode(data);
+                DNode ahead = temp.next;
+                temp.next = newDNode;
+                newDNode.prev = temp;
+                newDNode.next = ahead;
+                if (ahead != null) {
+                    ahead.prev = newDNode;
+                }
+
+                break;
+            }
+            temp = temp.next;
+        }
+        return head;
+
     }
 
     public static void main(String[] args) {
@@ -185,7 +222,10 @@ public class doublyLinkedList {
         // head = insertAtStart(head, 1);
         // print(head);
 
-        head = insertAtEnd(head, 9);
+        // head = insertAtEnd(head, 9);
+        // print(head);
+
+        head = insertAtKthPoi(head, 7, 6);
         print(head);
 
     }
