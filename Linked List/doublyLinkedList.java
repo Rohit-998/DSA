@@ -202,7 +202,28 @@ public class doublyLinkedList {
 
     }
 
-   
+    private static DNode insertAfterVal(DNode head, int data, int val) {
+        if (head == null) {
+            return null;
+        }
+        DNode temp = head;
+        while (temp != null) {
+            if (temp.data == val) {
+                DNode newDNode = new DNode(data);
+                newDNode.next = temp.next;
+                if (temp.next != null) {
+                    temp.next.prev = newDNode;
+                }
+
+                temp.next = newDNode;
+                newDNode.prev = temp;
+                break;
+
+            }
+            temp = temp.next;
+        }
+        return head;
+    }
 
     public static void main(String[] args) {
         int[] arr = { 2, 3, 4, 5, 6, 8 };
@@ -227,7 +248,10 @@ public class doublyLinkedList {
         // head = insertAtEnd(head, 9);
         // print(head);
 
-        head = insertAtKthPoi(head, 7, 6);
+        // head = insertAtKthPoi(head, 7, 6);
+        // print(head);
+
+        head = insertAfterVal(head, 7, 6);
         print(head);
 
     }
