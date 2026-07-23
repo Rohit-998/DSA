@@ -49,7 +49,7 @@ public class doublyLinkedList {
         }
 
     }
-    
+
     // T=O(1)
     private static DNode deleteHead(DNode head) {
         if (head == null) {
@@ -62,14 +62,13 @@ public class doublyLinkedList {
         DNode temp = head;
         head = head.next;
         head.prev = null;
-        temp.next=null;
+        temp.next = null;
         return head;
-        
 
     }
-     
+
     // T=O(N)
-    private static DNode deleteTail(DNode head){
+    private static DNode deleteTail(DNode head) {
         if (head == null) {
             return null;
         }
@@ -77,7 +76,7 @@ public class doublyLinkedList {
             return null;
         }
         DNode temp = head;
-        while (temp.next!=null) {
+        while (temp.next != null) {
             temp = temp.next;
 
         }
@@ -88,24 +87,24 @@ public class doublyLinkedList {
     }
 
     // T=O(N)
-    private static DNode deleteKthElement(DNode head ,int k){
+    private static DNode deleteKthElement(DNode head, int k) {
 
-        if (head==null) {
-         return null;
+        if (head == null) {
+            return null;
         }
-        if (k==1) {
+        if (k == 1) {
             return deleteHead(head);
         }
         int cnt = 0;
         DNode temp = head;
 
-        while (temp!=null) {
+        while (temp != null) {
             cnt++;
-            if (cnt==k-1) {
+            if (cnt == k - 1) {
                 DNode ahead = temp.next.next;
                 temp.next = ahead;
-                if(ahead !=null){
-                ahead.prev = temp;
+                if (ahead != null) {
+                    ahead.prev = temp;
                 }
                 break;
             }
@@ -115,11 +114,11 @@ public class doublyLinkedList {
     }
 
     // T=O(N)
-    private static DNode deleteBeforeEle(DNode head , int el){
-        if (head==null) {
+    private static DNode deleteBeforeEle(DNode head, int el) {
+        if (head == null) {
             return null;
         }
-        if (head.next==null) {
+        if (head.next == null) {
             return head;
         }
         if (head.next.data == el) {
@@ -127,30 +126,44 @@ public class doublyLinkedList {
         }
 
         DNode temp = head;
-        while (temp!=null) {
-           if (temp.data == el) {
-              DNode prev = temp.prev.prev;
-              temp.prev = prev;
-              prev.next = temp;
-              break;
-           } 
-           temp= temp.next;
+        while (temp != null) {
+            if (temp.data == el) {
+                DNode prev = temp.prev.prev;
+                temp.prev = prev;
+                prev.next = temp;
+                break;
+            }
+            temp = temp.next;
         }
         return head;
     }
 
-
     // T=O(1)
-    private static DNode insertAtStart(DNode head , int data){
-        if (head==null) {
+    private static DNode insertAtStart(DNode head, int data) {
+        if (head == null) {
             return new DNode(data);
         }
-        DNode newDnode =  new DNode(data, head,null );
-        head.prev= newDnode;
+        DNode newDnode = new DNode(data, head, null);
+        head.prev = newDnode;
         return newDnode;
     }
 
-    
+    // T=O(N)
+    private static DNode insertAtEnd(DNode head, int data) {
+        if (head == null) {
+            return new DNode(data);
+        }
+        DNode newDNode = new DNode(data);
+        DNode temp = head;
+        while (temp.next != null) {
+          
+            temp = temp.next;
+        }
+        temp.next = newDNode;
+        newDNode.prev = temp;
+      
+        return head;
+    }
 
     public static void main(String[] args) {
         int[] arr = { 2, 3, 4, 5, 6, 8 };
@@ -166,7 +179,13 @@ public class doublyLinkedList {
         // head = deleteKthElement(head, 3);
         // print(head);
 
-        head = deleteBeforeEle(head, 4);
+        // head = deleteBeforeEle(head, 4);
+        // print(head);
+
+        // head = insertAtStart(head, 1);
+        // print(head);
+
+        head = insertAtEnd(head, 9);
         print(head);
 
     }
