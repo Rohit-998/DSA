@@ -37,7 +37,7 @@ public class sortLLOfZeroOneAndTwos {
     // }
 
 
-    // T=O(2N) , S=O(1)
+    // Optiaml T=O(N) , S=O(1)
     public static Node sort(Node head) {
         Node zeroHead = new Node(-1);
         Node oneHead = new Node(-1);
