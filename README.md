@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **84 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **85 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -183,6 +183,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `oddEvenLL.java` | Odd Even Linked List | Brute: create new nodes by index parity; Optimal: rearrange pointers with odd/even chains | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(1) |
 | `sortLLOfZeroOneAndTwos.java` | Sort Linked List of 0s, 1s, and 2s | Brute: count 0s/1s/2s then overwrite data; Optimal: separate into 3 chains with dummy nodes then link | Both: T=O(2N) S=O(1) |
 | `removeNthNodeFromTheEnd.java` | Remove Nth Node From End of List | Brute: count length then walk to (len-n-1); Optimal: fast/slow pointer with n-gap | Brute: T=O(2*Len) S=O(1), Optimal: T=O(Len) S=O(1) |
+| `reverseLL.java` | Reverse a Linked List | Brute: use stack to swap data; Optimal: iterative pointer reversal | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(1) |
 
 ---
 
