@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **89 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **90 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -188,6 +188,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `addOne.java` | Add One to Number Represented as Linked List | Brute: reverse, add, reverse back; Optimal: recursive carry propagation | Brute: T=O(3N) S=O(1), Optimal: T=O(N) S=O(N) |
 | `intersectionPointOfTwoLL.java` | Intersection Point of Two Linked Lists | Brute: HashMap; Better: align lengths then walk; Optimal: two-pointer swap | Brute: T=O(M+N) S=O(N), Better: T=O(LenA+2*LenB) S=O(1), Optimal: T=O(LenA+LenB) S=O(1) |
 | `middleOfLL.java` | Middle of a Linked List | Brute: count length then walk to len/2; Optimal: slow/fast pointer | Brute: T=O(N+N/2) S=O(1), Optimal: T=O(N) S=O(1) |
+| `detectAloopInLL.java` | Detect a Loop in Linked List | Brute: HashMap to track visited nodes; Optimal: Floyd's cycle detection (slow/fast) | Brute: T=O(N) S=O(N), Optimal: T=O(N) S=O(1) |
 
 ---
 
