@@ -27,50 +27,72 @@ public class intersectionPointOfTwoLL {
 
     // }
 
-    // Optimal T=O(M+N) , S=O(1)
-    public static Node getIntersectionNode(Node headA, Node headB) {
-        int lenA = 0;
-        int lenB = 0;
+    // Better T=O(LenA+2*LenB) , S=O(1)
+    // public static Node getIntersectionNode(Node headA, Node headB) {
+    //     int lenA = 0;
+    //     int lenB = 0;
 
+    //     Node tempA = headA;
+    //     Node tempB = headB;
+    //     while (tempA != null) {
+    //         lenA++;
+    //         tempA = tempA.next;
+    //     }
+
+    //     while (tempB != null) {
+    //         lenB++;
+    //         tempB = tempB.next;
+    //     }
+
+    //     tempA = headA;
+    //     tempB = headB;
+
+    //     int d = Math.abs(lenA - lenB);
+
+    //     if (lenA > lenB) {
+
+    //         for (int i = 0; i < d; i++) {
+    //             tempA = tempA.next;
+    //         }
+    //     } else {
+
+    //         for (int i = 0; i < d; i++) {
+    //             tempB = tempB.next;
+    //         }
+    //     }
+
+    //     while (tempA != null) {
+    //         if (tempA == tempB) {
+    //             return tempA;
+    //         }
+    //         tempA = tempA.next;
+    //         tempB = tempB.next;
+    //     }
+
+    //     return null;
+
+    // }
+
+    // Optimal T=O(LenA+LenB) , S=O(1)
+
+    public static Node getIntersectionNode(Node headA, Node headB){
         Node tempA = headA;
         Node tempB = headB;
-        while (tempA != null) {
-            lenA++;
+        while (tempA!=tempB) {
             tempA = tempA.next;
-        }
-
-        while (tempB != null) {
-            lenB++;
             tempB = tempB.next;
-        }
-
-        tempA = headA;
-        tempB = headB;
-
-        int d = Math.abs(lenA - lenB);
-
-        if (lenA > lenB) {
-
-            for (int i = 0; i < d; i++) {
-                tempA = tempA.next;
-            }
-        } else {
-
-            for (int i = 0; i < d; i++) {
-                tempB = tempB.next;
-            }
-        }
-
-        while (tempA != null) {
-            if (tempA == tempB) {
+            if (tempA==tempB) {
                 return tempA;
             }
-            tempA = tempA.next;
-            tempB = tempB.next;
+            if (tempA==null) {
+                tempA = headB;
+            }
+            if (tempB == null) {
+                tempB = headA;
+            }
+
         }
-
-        return null;
-
+        return tempA;
     }
 
 }
