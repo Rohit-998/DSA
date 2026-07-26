@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **87 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **88 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -186,6 +186,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `reverseLL.java` | Reverse a Linked List | Brute: use stack to swap data; Optimal: iterative pointer reversal | Brute: T=O(2N) S=O(N), Optimal: T=O(N) S=O(1) |
 | `checkPalindrome.java` | Check if Linked List is Palindrome | Brute: use stack; Optimal: find middle, reverse second half, compare | Brute: T=O(2N) S=O(N), Optimal: T=O(2N) S=O(1) |
 | `addOne.java` | Add One to Number Represented as Linked List | Brute: reverse, add, reverse back; Optimal: recursive carry propagation | Brute: T=O(3N) S=O(1), Optimal: T=O(N) S=O(N) |
+| `intersectionPointOfTwoLL.java` | Intersection Point of Two Linked Lists | Brute: HashMap to store nodes; Optimal: align lengths then walk together | Brute: T=O(M+N) S=O(N), Optimal: T=O(M+N) S=O(1) |
 
 ---
 
