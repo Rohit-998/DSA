@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **96 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **97 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -195,6 +195,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `removeDuplicatesFromSortedDLL.java` | Remove Duplicates from Sorted DLL | Optimal: single pass skipping duplicates | Optimal: T=O(N) S=O(1) |
 | `reverseNodesInKGroupSize.java` | Reverse Nodes in K-Group | Optimal: find kth node, detach group, reverse, relink | T=O(2N) S=O(1) |
 | `rotateALL.java` | Rotate a Linked List | Optimal: find tail, make circular, break at new head | T=O(2N) S=O(1) |
+| `mergeTwoSortedLL.java` | Merge Two Sorted Linked Lists | Optimal: dummy node with two pointers | T=O(N1+N2) S=O(1) |
 
 ---
 
