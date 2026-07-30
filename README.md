@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **94 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **95 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, and linked lists — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -193,6 +193,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `deleteAllOccOfAKeyInDll.java` | Delete All Occurrences of a Key in DLL | Optimal: Traverse and update prev/next pointers | Optimal: T=O(N) S=O(1) |
 | `findAllPairsWithGivenSumInSortedDLL.java` | Find All Pairs with Given Sum in Sorted DLL | Brute: nested loop; Optimal: two pointers (left & right) | Brute: T=O(N^2) S=O(1), Optimal: T=O(N) S=O(1) |
 | `removeDuplicatesFromSortedDLL.java` | Remove Duplicates from Sorted DLL | Optimal: single pass skipping duplicates | Optimal: T=O(N) S=O(1) |
+| `reverseNodesInKGroupSize.java` | Reverse Nodes in K-Group | Optimal: find kth node, detach group, reverse, relink | T=O(2N) S=O(1) |
 
 ---
 
