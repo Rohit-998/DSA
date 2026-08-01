@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **100 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **101 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -213,6 +213,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 |------|---------|----------|------------|
 | `implementtation.java` | Stack Implementation (Array & LL) | Optimal: array/linked list based manual stack operations | Push/Pop: T=O(1) S=O(N) |
 | `Implementation.java` | Queue Implementation (Array & LL) | Optimal: array/linked list based manual queue operations | Push/Pop: T=O(1) S=O(N) |
+| `balancedParentheses.java` | Balanced Parentheses | Optimal: stack to match brackets | T=O(N) S=O(N) |
 
 ---
 
