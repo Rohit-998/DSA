@@ -1,0 +1,29 @@
+package Stack;
+
+import java.util.Stack;
+
+public class nextGreaterElement2 {
+
+    // Optimal: T=O(N), S=O(N)
+    public int[] nextGreaterElements(int[] nums) {
+
+        int[] nge = new int[nums.length];
+        Stack<Integer> st = new Stack<>();
+
+        for (int i = 2 * nge.length - 1; i >= 0; i--) {
+            while (!st.isEmpty() && st.peek() <= nums[i % nums.length]) {
+                st.pop();
+
+            }
+            if (i < nge.length) {
+                nge[i] = st.isEmpty() ? -1 : st.peek();
+            }
+           st.push(nums[i % nums.length]);
+
+        }
+
+        return nge;
+
+    }
+
+}
