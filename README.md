@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **106 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **107 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -219,6 +219,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `minStack.java` | Min Stack | Optimal: store formula `2*val-min` to keep track of previous minimum in O(1) space, use `long` to avoid overflow | T=O(1) S=O(N) |
 | `nextGreaterElement.java` | Next Greater Element I | Optimal: monotonic decreasing stack from right-to-left + HashMap for O(1) lookups | T=O(N1+N2) S=O(N2) |
 | `nextGreaterElement2.java` | Next Greater Element II | Optimal: circular array trick using modulo on `2N` monotonic stack loop | T=O(N) S=O(N) |
+| `previousSmallerElement.java` | Previous Smaller Element | Optimal: monotonic increasing stack from left-to-right | T=O(N) S=O(N) |
 
 ---
 
