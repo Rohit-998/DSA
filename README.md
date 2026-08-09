@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **111 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **112 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -224,6 +224,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `sumOfSubArrayMini.java` | Sum of Subarray Minimums | Optimal: Monotonic Stacks to find NSE and PSE, avoid duplicate double-counting | T=O(N) S=O(N) |
 | `sumOfSubArrayRanges.java` | Sum of Subarray Ranges | Optimal: sumSubarrayMax(arr) - sumSubarrayMins(arr) using 4 monotonic stacks | T=O(N) S=O(N) |
 | `asteroidCollision.java` | Asteroid Collision | Optimal: Stack to simulate collisions, pop if right-moving is smaller than incoming left-moving | T=O(2N) S=O(N) |
+| `largestRectangelInHistogram.java` | Largest Rectangle in Histogram | Optimal: Single-pass Monotonic Stack computing max area on pop | T=O(N) S=O(N) |
 
 ---
 
