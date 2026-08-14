@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **115 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **116 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -228,6 +228,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `maximalRectangle.java` | Maximal Rectangle | Optimal: Compute vertical prefix sum (heights) and run Largest Rectangle in Histogram for each row | T=O(R*C) S=O(R*C) |
 | `removeKdigitis.java` | Remove K Digits | Optimal: Monotonic stack to keep digits in ascending order, handle leading zeros string cleanup | T=O(3N) S=O(2N) |
 | `stockSpan.java` | Online Stock Span | Optimal: Monotonic stack storing [price, index] pairs, compute span via PGE index | T=O(2N) S=O(N) |
+| `slidingWindow.java` | Sliding Window Maximum | Optimal: Deque to store indices of max elements in current window, maintain monotonically decreasing order | T=O(2N) S=O(K) |
 
 ---
 
