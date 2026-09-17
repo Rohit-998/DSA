@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **116 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **117 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -230,6 +230,11 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | `stockSpan.java` | Online Stock Span | Optimal: Monotonic stack storing [price, index] pairs, compute span via PGE index | T=O(2N) S=O(N) |
 | `slidingWindow.java` | Sliding Window Maximum | Optimal: Deque to store indices of max elements in current window, maintain monotonically decreasing order | T=O(2N) S=O(K) |
 
+### Two Pointers And Sliding Windows
+
+| File | Problem | Approach | Complexity |
+|------|---------|----------|------------|
+| `MaximumPointsFromCards.java` | Maximum Points You Can Obtain from Cards | Optimal: Sliding Window / Two Pointers tracking left sum and right sum | T=O(2N) S=O(1) |
 ---
 
 ## Notes
