@@ -1,6 +1,6 @@
 # Striver DSA Practice (Java)
 
-This repository contains **117 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
+This repository contains **118 Java solutions** covering arrays, pattern printing, recursion, sorting, binary search, trees, stacks, queues, linked lists, and bit manipulation — following the [Striver's A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/).
 
 Each problem includes **brute → better → optimal** approaches where applicable, with commented-out alternatives for learning.
 
@@ -235,6 +235,7 @@ Note: Most pattern programs use nested loops and are typically O(N^2) time with 
 | File | Problem | Approach | Complexity |
 |------|---------|----------|------------|
 | `MaximumPointsFromCards.java` | Maximum Points You Can Obtain from Cards | Optimal: Sliding Window / Two Pointers tracking left sum and right sum | T=O(2N) S=O(1) |
+| `longestSubStringWithoutRepeatingChar.java` | Longest Substring Without Repeating Characters | Optimal: Sliding Window with hash array tracking last seen index, skip left pointer on duplicate | T=O(N) S=O(256) |
 ---
 
 ## Notes
